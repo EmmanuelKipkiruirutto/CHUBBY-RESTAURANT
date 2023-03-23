@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Chubby Restaurant</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="sub-header">
+                <nav>
+                <a href="index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Services.html">SERVICES</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Services</h1>
+        </div>
+
+<!-----Services----->
+<section class="Services">
+    <div class="Service">
+     <img src="13.jpg" alt="Service 1">
+     <h3>Waiter service</h3>
+     <p>More commonly known as sit-down service,<br>this type of service requires a waiter to take care of everything from taking orders to serving food and payment.</p>
+    </div>
+    <div class="Service">
+     <img src="12.jpg" alt="Service 2">
+     <h3>Buffet service</h3>
+     <p>A buffet is a self-service style where the guests serve themselves.</p>
+    </div>
+    <div class="Service">
+     <img src="14.jpg" alt="Service 3">
+     <h3>Self-service</h3>
+     <p>Diners place, pay, and pick up their orders at a counter similar to fast casual <br> and fast-food establishments.</p>
+    </div>
+</section>
+
+
+<!----Footer-->
+
+<section class="Footer">
+    <h4>About Us</h4>
+    <p>Chubby Restaurant Never Dissappoints in terms of its wellbeing! We give the best meals as per the nutritions required!</p>
+    <div class="icons">
+        <i class="fa fa-Facebook"></i>
+        <i class="fa fa-Twitter"></i>
+        <i class="fa fa-Instagram"></i>
+        <i class="fa fa-Linkedin"></i>
+    </div>
+    <p>Made with<i class="fa fa-heart-o"></i>by Chubby Restaurant!</p>
+</section>
+
+<!--------javaScript for Toogle Menu-------->
+        <script>
+
+            var navLinks= document.getElementById("navLinks");
+
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+
+        </script>
+    </body>
+</html>

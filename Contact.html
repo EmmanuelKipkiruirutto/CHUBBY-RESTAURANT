@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Chubby Restaurant</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="sub-header">
+                <nav>
+                <a href="index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Services.html">SERVICES</a>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </div>
+
+<!-----Contact us----->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+</section>
+
+<section class="Contact-us">
+    <div class="row">
+        <div class="Contact-col">
+            <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>AMLY Road, ANX Building</h5>
+                <p>Eldoret, Uasin Gishu, Kenya</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>(+254) 741778182</h5>
+                <p>Monday to Friday, 8AM to 5PM</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>info@ChubbyRestaurant.com</h5>
+                <p>Email us your Query</p>
+            </span>
+        </div>
+        </div>
+        <div class="Contact-col">
+
+            <form action="form hndler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message"placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send 
+                Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+ 
+
+
+<!----Footer-->
+
+<section class="Footer">
+    <h4>About Us</h4>
+    <p>Chubby Restaurant Never Dissappoints in terms of its wellbeing! We give the best meals as per the nutritions required!</p>
+    <div class="icons">
+        <i class="fa fa-Facebook"></i>
+        <i class="fa fa-Twitter"></i>
+        <i class="fa fa-Instagram"></i>
+        <i class="fa fa-Linkedin"></i>
+    </div>
+    <p>Made with<i class="fa fa-heart-o"></i>by Chubby Restaurant!</p>
+</section>
+
+<!--------javaScript for Toogle Menu-------->
+        <script>
+
+            var navLinks= document.getElementById("navLinks");
+
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+
+        </script>
+
+
+    </body>
+</html>
